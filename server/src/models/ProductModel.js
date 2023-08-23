@@ -13,10 +13,19 @@ const productSchema = new mongoose.Schema({
         String,
         required: true,
     },
-    name: String,
+    name: {
+        String,
+        required: true,
+    },
     color: [String],
-    price: Number,
-    status:String,
+    price: {
+        Number,
+        required: true,
+    },
+    status:{
+        String,
+        required: true,
+    },
     description: [String],
     image: String,
     active:{type:Boolean,
